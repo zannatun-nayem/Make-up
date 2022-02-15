@@ -1,0 +1,27 @@
+.portfolio-area {
+  .single-portfolio {
+    .portfolio-image {
+      position: relative;
+      transition: all 0.5s ease-in-out;
+      .icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        opacity: 0;
+        transform: scale(1.09);
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease-in-out;
+        color: $theme-color-one;
+      }
+    }
+    &:hover {
+      .portfolio-image {
+        .icon {
+          transform: scale(1.09);
+          opacity: 1;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}

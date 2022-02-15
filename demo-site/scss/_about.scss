@@ -1,0 +1,106 @@
+.about-area {
+  img {
+    max-width: 100%;
+  }
+  .section-heading {
+    text-align: left;
+
+    h2 {
+      font-size: 15px;
+      text-align: center;
+      font-weight: 700;
+
+      text-transform: uppercase;
+      display: inline;
+      color: $theme-color-one;
+      letter-spacing: 5px;
+    }
+  }
+  .paragraph {
+    margin-bottom: 32px;
+    p {
+      color: $theme-color-two;
+      font-size: 50px;
+      font-weight: 700;
+      text-align: left;
+    }
+  }
+  .about-detail {
+    margin-bottom: 32px;
+    strong {
+      font-size: 18px;
+
+      color: $theme-color-two;
+    }
+  }
+  .award-detail {
+    margin-bottom: 32px;
+    h4 {
+      font-size: 15px;
+
+      font-weight: 700;
+
+      text-transform: uppercase;
+      display: inline;
+      color: $theme-color-one;
+      letter-spacing: 2px;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .about-area {
+    .section-heading {
+      h2 {
+        font-size: 12px;
+      }
+    }
+    .paragraph {
+      margin-bottom: 32px;
+      p {
+        font-size: 30px;
+      }
+    }
+    .about-detail {
+      margin-bottom: 32px;
+      strong {
+        font-size: 14px;
+        color: $theme-color-two;
+      }
+    }
+    .award-detail {
+      margin-bottom: 32px;
+      h4 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .about-area {
+    .section-heading {
+      h2 {
+        font-size: 12px;
+      }
+    }
+    .paragraph {
+      margin-bottom: 32px;
+      p {
+        font-size: 30px;
+      }
+    }
+    .about-detail {
+      margin-bottom: 32px;
+      strong {
+        font-size: 14px;
+
+        color: $theme-color-two;
+      }
+    }
+    .award-detail {
+      margin-bottom: 32px;
+      h4 {
+        font-size: 12px;
+      }
+    }
+  }
+}

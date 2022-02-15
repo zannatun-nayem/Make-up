@@ -1,0 +1,60 @@
+.team-area {
+  .team-content {
+    background: rgba($theme-color-one, 0.1);
+    transition: all 1s ease-in-out;
+    img {
+      margin-top: 30px;
+    }
+    .artist-heading {
+      h5 {
+        margin-top: 32px;
+        font-size: 25px;
+        font-weight: 600;
+        color: $theme-color-two;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        color: $theme-color-one;
+      }
+    }
+    a {
+      i {
+        margin: 8px 0px 30px 0px;
+        font-size: 25px;
+        font-weight: 600;
+        color: $theme-color-two;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          transform: scale(1.5, 1.5);
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+    &:hover {
+      img {
+        transform: scale(1.09, 1.09);
+        transition: all 1s ease-in-out;
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .team-area {
+    .team-content {
+      .artist-heading {
+        h5 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+      a {
+        i {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

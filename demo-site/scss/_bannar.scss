@@ -1,0 +1,162 @@
+.home-area {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  .home-area-content {
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .home-content {
+      .name-artist {
+        p {
+          font-size: 35px;
+          color: $theme-color-two;
+          font-weight: 600;
+          margin-bottom: 20px;
+          letter-spacing: 0.5px;
+        }
+      }
+      .work-detail {
+        h1 {
+          font-size: 65px;
+          color: $theme-color-two;
+          font-weight: 900;
+          margin-bottom: 20px;
+          letter-spacing: 0.5px;
+        }
+      }
+      .work-descreption {
+        p {
+          font-size: 25px;
+          color: $theme-color-two;
+          font-weight: 600;
+          margin-bottom: 20px;
+          letter-spacing: 0.5px;
+        }
+      }
+      .home-area-button {
+        a {
+          position: relative;
+          display: inline-block;
+          font-size: 15px;
+          line-height: 30px;
+          text-decoration: none;
+          color: $theme-color-two;
+          padding: 11px 30px;
+          font-weight: 500;
+          overflow: hidden;
+
+          background-color: $theme-color-white;
+          border: 2px solid $theme-color-two;
+
+          &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+            background-color: $theme-color-two;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transform: scale(0.2, 1);
+            transform: scale(0.2, 1);
+          }
+          .txt {
+            position: relative;
+            z-index: 1;
+          }
+          &:hover {
+            color: $theme-color-white;
+          }
+          &:hover::before {
+            opacity: 1;
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-area {
+    .home-area-content {
+      .home-content {
+        .name-artist {
+          p {
+            font-size: 20px;
+          }
+        }
+        .work-detail {
+          h1 {
+            font-size: 45px;
+            color: $theme-color-two;
+            font-weight: 900;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+          }
+        }
+        .work-descreption {
+          p {
+            font-size: 15px;
+          }
+        }
+        .home-area-button {
+          a {
+            font-size: 12px;
+            line-height: 20px;
+            background-color: $theme-color-white;
+            border: 2px solid $theme-color-two;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home-area {
+    .home-area-content {
+      .home-content {
+        .name-artist {
+          p {
+            font-size: 20px;
+          }
+        }
+        .work-detail {
+          h1 {
+            font-size: 45px;
+            color: $theme-color-two;
+            font-weight: 900;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+          }
+        }
+        .work-descreption {
+          p {
+            font-size: 15px;
+          }
+        }
+        .home-area-button {
+          a {
+            font-size: 12px;
+            line-height: 20px;
+            background-color: $theme-color-white;
+            border: 2px solid $theme-color-two;
+          }
+        }
+      }
+    }
+  }
+}
